@@ -10,7 +10,6 @@ body {
     flex-grow: 10;
 }
 
-
 .medium-list {
     margin: auto;
     width: 600px;
@@ -24,7 +23,7 @@ body {
   }
   
   .list-header-title {
-    color:blue;
+    color:red;
     text-align: center;
     background: rgba(0, 0, 0, .03);
     padding: 8px 20px;
