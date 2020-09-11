@@ -24,7 +24,7 @@ body {
   }
   
   .list-header-title {
-    color:pink;
+    color:red;
     text-align: center;
     background: rgba(0, 0, 0, .03);
     padding: 8px 20px;
