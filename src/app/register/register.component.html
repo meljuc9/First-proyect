@@ -4,34 +4,16 @@
       <form class="example-form" [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate>
         <div class="form-container">
           <mat-form-field class="example-full-width">
-            <mat-label>Nombre</mat-label>
+            <mat-label>Nombre de usuario</mat-label>
             <input matInput formControlName="name"
                    [(ngModel)]="user.name">
             <mat-hint>¡Los errores aparecerán instantáneamente!</mat-hint>
             <mat-error *ngIf="registerForm.controls['name'].hasError('required')">
-              El nombre es<strong> obligatorio</strong>
+              El nombre de usuario es<strong> obligatorio</strong>
             </mat-error>
             <mat-error  *ngIf="registerForm.controls['name'].hasError('minlength')">
-              El nombre debe tener al <strong>menos 3 carácteres.</strong> 
+              El nombre de usuario debe tener al <strong>menos 3 carácteres.</strong> 
             </mat-error>
-          </mat-form-field>
-
-          <mat-form-field class="example-full-width">
-            <mat-label>Email</mat-label>
-              <input id="email"
-                     matInput
-                     formControlName="email"
-                     [(ngModel)]="user.email" placeholder="Ex. pat@example.com"/>
-              <mat-hint>¡Los errores aparecerán instantáneamente!</mat-hint>
-              <mat-error *ngIf="registerForm.controls['email'].hasError('required')">
-                Por favor, introduzca una <strong>dirección de correo electrónico válida.</strong>
-              </mat-error>
-              <mat-error  *ngIf="registerForm.controls['email'].hasError('minlength')">
-                El correo debe tener al <strong>menos 8 carácteres.</strong> 
-              </mat-error>
-              <mat-error  *ngIf="registerForm.controls['email'].hasError('maxlength')">
-                El correo debe tener <strong>máximo 50 carácteres.</strong> 
-              </mat-error>
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
@@ -59,8 +41,8 @@
 
             <button mat-button type="submit" 
                     class="mat-raised-button mat-primary" 
-                    [disabled]="!registerForm.valid">Crear cuenta</button>
-            <button mat-button routerLink="/login" class="divider"><strong>Ingresar</strong></button>
+                    [disabled]="!registerForm.valid">Crear cuenta
+            </button>
         </div>
       </form>
     </div>

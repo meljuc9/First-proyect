@@ -15,7 +15,7 @@
               <mat-error *ngIf="loginForm.controls['email'].hasError('required')">
                 Por favor, introduzca la <strong>dirección de correo electrónico.</strong>
               </mat-error>
-            </mat-form-field>
+          </mat-form-field>
   
           <mat-form-field class="example-full-width">
             <mat-label>Contraseña</mat-label>
@@ -32,11 +32,9 @@
                   La contraseña es<strong> obligatoria</strong>
                 </mat-error>
             </mat-form-field>
-  
-            <button mat-button type="submit" 
-                    class="mat-raised-button mat-primary" 
-                    [disabled]="!loginForm.valid">Ingresar</button>
-            <button mat-button routerLink="/register" class="divider"><strong>Registrarse</strong></button>
+            <button mat-button type="submit" class="mat-raised-button mat-primary" 
+                    [disabled]="!loginForm.valid">Ingresar
+            </button>
         </div>
       </form>
     </div>
